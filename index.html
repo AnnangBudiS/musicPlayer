@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/35c5eac0f2.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="player">
+        <div class="wrapper">
+            <div class="option">
+                <button class="menu"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </div>
+
+            <div class="info">
+                <div class="music-name">Music Name</div>
+                <div class="artist-name">Artist Name</div>
+            </div>
+
+            <div class="slider_container">
+                <div class="current-time">00:00</div>
+                <input type="range" max="100" min="0" value="0" class="slider" onchange="slideTo()">
+                <div class="duration-time">00:00</div>
+            </div>
+
+            <div class="button">
+                <button class="previous" onclick="prevTrack()"><i class="fa fa-backward fa-1x"></i></button>
+                <button class="playPause" onclick="playPause()"><i class="fa far fa-play-circle fa-4x"></i></button>
+                <button class="next" onclick="nextTrack()"><i class="fa fas fa-forward fa-1x"></i></button>
+            </div>
+            <div class="music-of">Music x OF x</div>
+        </div>
+    </div>
+</body>
+</html>

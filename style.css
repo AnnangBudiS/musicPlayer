@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+}
+
+.player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+
+.wrapper {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0, 0.4);
+}
+
+.option .menu {
+   position: relative;
+   padding: 4px;
+   right: 10px;
+   bottom: 10px;
+   background: transparent;
+   border: none;
+   font-size: 20px;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.info,
+.music-of {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.music-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.artist-name
+ {
+    font-weight: bold;
+    margin: 12px 0;
+    font-size: .75rem;
+}
+
+.music-of {
+    font-size: .75rem;
+    font-weight: bold;
+}
+
+.button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    border-radius: 20px;
+    margin: 20px 0;
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0, 0.5) inset;
+}
+
+.slider_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    appearance: none;
+    height: 5px;
+    background: rgb(73, 159, 235);
+    transition:  opacity .2s;
+    -webkit-transition: .2s;
+}
+
+.current-time,
+.duration-time {
+    position: relative;
+    font-size: 12px;
+    top: 12px;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border: 3px solid #252525;
+    cursor: grab;
+    border-radius: 100%;
+}
+
+.slider:hover{
+    opacity: 75%;
+}
+
+
+.previous,
+.playPause,
+.next{
+    background: none;
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #252525;
+}
+
+.previous:hover,
+.playPause:hover,
+.next:hover {
+    color: black;
+}
+
+
+
